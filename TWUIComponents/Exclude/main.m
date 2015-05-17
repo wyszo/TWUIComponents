@@ -1,12 +1,7 @@
 //
-//  main.m
 //  TWUIComponents
 //
-//  Created by Wyszo on 17/05/15.
-//  Copyright (c) 2015 SynappseTomaszWyszomirski. All rights reserved.
-//
 
-#import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 
 int main(int argc, char * argv[]) {
