@@ -27,6 +27,7 @@
 		313874671B0941610088CDA7 /* TWGalleryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWGalleryView.m; sourceTree = "<group>"; };
 		313874741B09AE960088CDA7 /* TWGalleryPageControlLayoutHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWGalleryPageControlLayoutHelper.h; sourceTree = "<group>"; };
 		313874751B09AE960088CDA7 /* TWGalleryPageControlLayoutHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWGalleryPageControlLayoutHelper.m; sourceTree = "<group>"; };
+		31DB5C5C1B0A5BCC008CA821 /* TWUIComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWUIComponents.h; sourceTree = "<group>"; };
 		44CB11D96D28C64437D783CC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		92718D7D5F06887BD096D41E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFA71D0ED032DB6704D94090 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -111,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				313874631B09405E0088CDA7 /* Gallery */,
+				31DB5C5C1B0A5BCC008CA821 /* TWUIComponents.h */,
 			);
 			name = Components;
 			sourceTree = "<group>";
