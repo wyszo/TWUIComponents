@@ -1,10 +1,18 @@
 PODS:
   - KZAsserts (1.0)
+  - TWCommonLib (0.1)
 
 DEPENDENCIES:
   - KZAsserts (= 1.0)
+  - TWCommonLib (from `../PlayerAid/TWCommonLib/`)
+
+EXTERNAL SOURCES:
+  TWCommonLib:
+    :branch: MoreHelpers
+    :path: ../PlayerAid/TWCommonLib/
 
 SPEC CHECKSUMS:
   KZAsserts: 6e613b569a33582dc94cf7a1f34a2c6d870982a7
+  TWCommonLib: 67b2669303d79b94c23a630935a5beb0e3371f41
 
 COCOAPODS: 0.35.0

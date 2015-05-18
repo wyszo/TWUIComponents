@@ -7,191 +7,521 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04E18BA428C55EC8A8041F9D /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F905BBD8239AE832A32E2975 /* Pods-dummy.m */; };
-		6A08959C663AA2D6558A809A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456DDF797F71B5F46D802914 /* Foundation.framework */; };
-		8D6874B817A6B87B3D11156F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456DDF797F71B5F46D802914 /* Foundation.framework */; };
-		D804B787DE376506D97A0E25 /* KZAsserts.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D46C8EC92CB206C6933ABC /* KZAsserts.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		EDB873909AE549221C4DD160 /* Pods-KZAsserts-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F32C69AE128E2026A6E7445 /* Pods-KZAsserts-dummy.m */; };
-		F3C30480FD9B5F4A5364AA4B /* KZAsserts.h in Headers */ = {isa = PBXBuildFile; fileRef = AA3386236A5D6223D012F2CD /* KZAsserts.h */; };
+		0712297DF254F77144886A38 /* KZAsserts.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A41B7E6874D4C5033CD4FD6 /* KZAsserts.h */; };
+		0712A9797B37329855DA8F09 /* UIImage+TWConvenience.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D8F35791E5888D00AA2D939 /* UIImage+TWConvenience.h */; };
+		0881989AACA6BB9708EF5411 /* NSObject+TWObjectLifetime.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DFE8EB6613E38BC4B8413F /* NSObject+TWObjectLifetime.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		0ACAA369F069C6B1F50F9E67 /* TWOrientationChangeDetectorUsingAccelerometer.m in Sources */ = {isa = PBXBuildFile; fileRef = AC18B399F1F32A6D4EE25B5E /* TWOrientationChangeDetectorUsingAccelerometer.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		0C1B5B60A2AD8E4550978939 /* TWUIImagePickerHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FBB563F943151264DFE359F /* TWUIImagePickerHelper.h */; };
+		14B3B2C27B461A90E7175754 /* TWItemsToSeguesMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = F0897BDBECCA5595449211D2 /* TWItemsToSeguesMapping.h */; };
+		170AE3E6E902A48BA1916B2E /* UIImage+TWByOverlayingImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C71F218A2B80582D49883755 /* UIImage+TWByOverlayingImage.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		1922DC307FFA05FBD4BA5145 /* NSSet+TWSetByRemoving.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C86EAA1E8527062BDEA7D1 /* NSSet+TWSetByRemoving.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		2465FC3B81D7B331C4AC4C39 /* TWJSONHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 16F754907413C0FD84439D24 /* TWJSONHelper.h */; };
+		2509D22C142BCE22856AF2A6 /* TWRectangleMath.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6FDB089639434D1841D9B1 /* TWRectangleMath.h */; };
+		26A23A4E7CDE2245612968F8 /* TWAlertFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C5C67C524560B069BFF032 /* TWAlertFactory.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		2ABA4E3FB69046D438A45B79 /* TWSimpleTableViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = EC22EA096FAF1099F1C491B9 /* TWSimpleTableViewDelegate.h */; };
+		2D8C251D0AAC6293B0F8CF53 /* TWLocationUpdatesManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F90CA12E2E7BD0C7D000F60 /* TWLocationUpdatesManager.h */; };
+		2D930383509CB50C3CFCBD71 /* TWDispatchMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 122CDD24EC6070B8ABCCA654 /* TWDispatchMacros.h */; };
+		35794F6D74BF95D0B2F3B0DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1096E4089125A35DC0229B7A /* Foundation.framework */; };
+		36DCDB722DA53B18DC8CBEE7 /* TWScrollViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E91D52310C97EA892B2B85 /* TWScrollViewDelegate.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		379000ABF9FFA20585C2644F /* UIView+TWSizes.h in Headers */ = {isa = PBXBuildFile; fileRef = 91C17D59FAA9B85A95D36403 /* UIView+TWSizes.h */; };
+		3C35E66534F377DA6BEF7EBF /* NSLayoutConstraint+TWAnimations.h in Headers */ = {isa = PBXBuildFile; fileRef = 31E350B5552908BF3BD16EE1 /* NSLayoutConstraint+TWAnimations.h */; };
+		468AE4BB8B64A40AE7050718 /* NSLayoutConstraint+ConstraintCopying.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A669B308EE0A10F5D5B818 /* NSLayoutConstraint+ConstraintCopying.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		4911A8A74B2F27D8F3AB0215 /* UIImagePickerController+TWCameraDeviceSwitching.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C3945D1209B720AF3DA44AC /* UIImagePickerController+TWCameraDeviceSwitching.h */; };
+		4E1B205A376FA2E74390E247 /* TWSimpleTableViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = ABCD9AEB5703CFBBE1DE7A08 /* TWSimpleTableViewDataSource.h */; };
+		50CE777F1B78C5D1E6D18B94 /* UIViewController+PerformSegueMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = C99C77A8F0BEA8B3EF27E3BC /* UIViewController+PerformSegueMapping.h */; };
+		51CAAD124E130333052FC449 /* UIView+TWFadeAnimations.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DCE39A15D15F2149081D255 /* UIView+TWFadeAnimations.h */; };
+		521C45077B79B667B5863E88 /* TWTextViewWithMaxLengthDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 018F4420FA30056CBA761C49 /* TWTextViewWithMaxLengthDelegate.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		5410D8E13DA185394CD41B40 /* TWCommonLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 369CA211B815B72D2E35C4C7 /* TWCommonLib.h */; };
+		550DF414158D07DD1B4A86FA /* UIView+TWFadeAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = F25F0337F0794999BB7F592F /* UIView+TWFadeAnimations.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		551702BBC7787B0329F21D13 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 237BDB3E116768DE7BE76F56 /* MapKit.framework */; };
+		5A549BDF384507A085D08DE9 /* TWOrientationChangeDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = F947FE7B5E82BF19D8BF5C57 /* TWOrientationChangeDetector.h */; };
+		5A6334802B5CB994AB5C6353 /* UIView+LayerDecoration.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE37ACFCDA546A61EF9D68F /* UIView+LayerDecoration.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		5CB3335B2BDF27D751FA5EC1 /* TWCoordinateSystemConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A7DC8F68A46FD78F2E9A6C7 /* TWCoordinateSystemConverter.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		60438B91AB4AB993D2FB86AE /* UIViewController+PerformSegueMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B9189861AEAD294B82A51E /* UIViewController+PerformSegueMapping.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		66932330958F2AFCA41D6B1D /* TWCommonTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = E60C59346899CC6C66B1A6A7 /* TWCommonTypes.h */; };
+		6A1863A99451B924477D377C /* TWUIImagePickerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B71DED8564DBD83D043E8559 /* TWUIImagePickerHelper.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		6ACC9F3E1BD7F4F7253A20F7 /* TWItemsToSeguesMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 80BF4FE5072437E7FD4C1497 /* TWItemsToSeguesMapping.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		6F5149C4E3D23B130C4C7F12 /* TWCommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 809749A09AB420D5BFF6746A /* TWCommonFunctions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		72A25556CB5D097C27D27530 /* UIView+LayerDecoration.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FE5F27D682F8833617E027D /* UIView+LayerDecoration.h */; };
+		73C6EC67CBE57A4A1682E75E /* UIImage+TWByOverlayingImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 0296354AC5A2D3A753DA5559 /* UIImage+TWByOverlayingImage.h */; };
+		78E4FD8283896E581BA8E4A4 /* UIImage+TWCreateImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 677440F11520DAE5AE93C772 /* UIImage+TWCreateImage.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		792BDDC2E95499BDAE465856 /* TWAlertFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 59757794E7CCBA5952F52C6C /* TWAlertFactory.h */; };
+		794A04894D73ECE60577E5CB /* TWMapKitHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 55AF1F395A314BA1595E6CCC /* TWMapKitHelper.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		7AA00B2133EC43DBBA18CB02 /* TWCommonFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C6EBE96469DE48B36292B8F /* TWCommonFunctions.h */; };
+		7AB8D5120C7A11E48ABD0E19 /* Pods-KZAsserts-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3524259A7751E8E0A3DA1BB7 /* Pods-KZAsserts-dummy.m */; };
+		7BC9F45D16B15145FF51FF98 /* TWSimpleMapViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = DD7685AAF679D4DE7E1857CE /* TWSimpleMapViewDelegate.h */; };
+		8551307034795262B91C218A /* TWOrientationChangeDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = B04387410601F55D939C0217 /* TWOrientationChangeDetector.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		8DE8392BBBC1E80A28467D7B /* Pods-TWCommonLib-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F4789BAE2E87C41F41E19B /* Pods-TWCommonLib-dummy.m */; };
+		945B389ABEBDF8DC4833CA7B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1096E4089125A35DC0229B7A /* Foundation.framework */; };
+		9CA92BFE577AE6FC906889F1 /* TWScrollViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = EE0A7FA41EB6BA1561D02E5D /* TWScrollViewDelegate.h */; };
+		A0944E894F727D8D44EEE0F2 /* TWDataWriteHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EF36311B4A0B9DA7054E46 /* TWDataWriteHelper.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		A253B4AADA6FF79DF98BD157 /* NSSet+TWSetByRemoving.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B394F96E1C6FAA79FB884AB /* NSSet+TWSetByRemoving.h */; };
+		A42DD425188F55D5D5AA57C6 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5592A9D29FE44310DEA1010 /* CoreMotion.framework */; };
+		A79581940BB61D3BBF80B431 /* TWMapKitHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = FF67E96482EE068665D4A518 /* TWMapKitHelper.h */; };
+		A827DE7F829208664F2B2390 /* TWSimpleTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = BCDCFE50E4123CC752EA9637 /* TWSimpleTableViewCell.h */; };
+		ACA0DC15BC1D07C0A93908D4 /* UIImage+TWCreateImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 8109BA27D26F1CED9F7CA5D6 /* UIImage+TWCreateImage.h */; };
+		B770DEF612548B0521B20345 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1426F89F983BA83318484A98 /* Pods-dummy.m */; };
+		B85C62637560AAFB56B25B6F /* TWSimpleTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F05AF6028903B9527758FB10 /* TWSimpleTableViewDelegate.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		BEF60A765788AAACABC096D5 /* TWRectangleMath.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E50F47AFFEE9CF25603DB7D /* TWRectangleMath.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		C0A521A046903C516D687B60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1096E4089125A35DC0229B7A /* Foundation.framework */; };
+		CB1384510FDCBAD4F75BAF88 /* TWCoordinateSystemConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E62BDF2161BC9850C2AA35D8 /* TWCoordinateSystemConverter.h */; };
+		CF740B4A6BB4A012ABD4EA49 /* UIView+TWSizes.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AEBB7F2ECD02F7CFFB05F2 /* UIView+TWSizes.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		D7A347161975AE67F065CC57 /* UIImage+TWConvenience.m in Sources */ = {isa = PBXBuildFile; fileRef = E1FAF5AD0589B7CEF40BCB6E /* UIImage+TWConvenience.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		D91F7EFF041063A9493FF6BB /* TWJSONHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8FE5FE8E5EE9EACDBE8232 /* TWJSONHelper.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		E0495AA3F98C5C9CA4BEBF33 /* TWTextViewWithMaxLengthDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F8C0558A19B5E92AB3044CE /* TWTextViewWithMaxLengthDelegate.h */; };
+		E0F88715BBBF6728D803D341 /* TWOrientationChangeDetectorUsingAccelerometer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D905967CE136C3CD481AFA4 /* TWOrientationChangeDetectorUsingAccelerometer.h */; };
+		E2844CEF66B95F729C55581E /* TWSimpleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2812FB56EAFFA5CDA0CAE3 /* TWSimpleTableViewCell.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		E3EDFFDB0815932EF284A181 /* UIImagePickerController+TWCameraDeviceSwitching.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D69E31FE0DA4F7E1A6CE11 /* UIImagePickerController+TWCameraDeviceSwitching.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		E4BCA835EAE8D8926F14B785 /* TWDispatchMacros.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF6859F2196346318BC66DC /* TWDispatchMacros.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		EC05BF52950ACE6C8B45AC7D /* NSLayoutConstraint+TWAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = E009CF9D39644E33B17D3362 /* NSLayoutConstraint+TWAnimations.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		EF55C7894EDDB4893B531494 /* TWArrayTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6F56981750044AC3DC660A /* TWArrayTableViewDataSource.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		F27A20F30E932EEB735974FB /* TWOrientationChangeDetectorProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = FF76AA2E4DB9BC7375E3C0A5 /* TWOrientationChangeDetectorProtocol.h */; };
+		F3ADA6A6B507A3EE2A29CD46 /* TWDataWriteHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 7026F74A9F2E837B0E5F86F7 /* TWDataWriteHelper.h */; };
+		F44118C222FB0AC156298804 /* TWLocationUpdatesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 68AE65AA2CD11EC9E941BC62 /* TWLocationUpdatesManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		F464163F24FD466CAFB81A81 /* TWSimpleMapViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2839972EFEE361884BAACCC0 /* TWSimpleMapViewDelegate.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		F5543CA5049715ABFBB90796 /* NSObject+TWObjectLifetime.h in Headers */ = {isa = PBXBuildFile; fileRef = C5BD6EE195E3E108004F0CAD /* NSObject+TWObjectLifetime.h */; };
+		F594756FC79A4C3B11603AF7 /* TWSimpleTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E0AFC404A1CBC86C743AA2 /* TWSimpleTableViewDataSource.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		F59DD25B7799C8E582AF898E /* NSLayoutConstraint+ConstraintCopying.h in Headers */ = {isa = PBXBuildFile; fileRef = 870D7C1DBFF5D01240C614DF /* NSLayoutConstraint+ConstraintCopying.h */; };
+		F891F0F336C792F8224ECFEA /* TWCommonMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 866A3512AA2B35B9C1E5D536 /* TWCommonMacros.h */; };
+		FA5D6FCB014699AE7BCB0CAF /* KZAsserts.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B7523D6734861F1B075C705 /* KZAsserts.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		FD363B4322E84409055683ED /* TWArrayTableViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = BC49207983A6532D37F49EED /* TWArrayTableViewDataSource.h */; };
+		FEF9231662615F3FD5386614 /* TWOrientationChangeDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 51A03A5306DF1D53E0E533E6 /* TWOrientationChangeDelegate.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		66885D7CAC9C6D9267921E59 /* PBXContainerItemProxy */ = {
+		26F901A1371322323D726864 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3CEB9BFD4DD83E61A1986569 /* Project object */;
+			containerPortal = 9397B0479EFC96B14ADC9CD7 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 875B074F53DD444E9A7E9E9F;
+			remoteGlobalIDString = F27ACFEBD09A936A41A093E0;
 			remoteInfo = "Pods-KZAsserts";
+		};
+		E76847C1FF17BD980A8B025B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9397B0479EFC96B14ADC9CD7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5049150096E1773546E07392;
+			remoteInfo = "Pods-TWCommonLib";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00D46C8EC92CB206C6933ABC /* KZAsserts.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KZAsserts.m; path = Classes/KZAsserts.m; sourceTree = "<group>"; };
-		0C7F0D7BB8C5C58D53F07F66 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		1A3852BB4B190428D0FCF8BC /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		41503B856447A9F38145AF3D /* libPods-KZAsserts.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KZAsserts.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		42DC569FAE84BC0771CDFDC9 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		456DDF797F71B5F46D802914 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6268BABF9FD89D96FEB52DD2 /* Pods-KZAsserts-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KZAsserts-Private.xcconfig"; sourceTree = "<group>"; };
-		6514D836D079B28362AE54C1 /* Pods-KZAsserts-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KZAsserts-prefix.pch"; sourceTree = "<group>"; };
-		68F62926DF30CA5F6685802E /* Pods-KZAsserts.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KZAsserts.xcconfig"; sourceTree = "<group>"; };
-		7F32C69AE128E2026A6E7445 /* Pods-KZAsserts-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KZAsserts-dummy.m"; sourceTree = "<group>"; };
-		860343C33AAA8202424A6AD9 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AA3386236A5D6223D012F2CD /* KZAsserts.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KZAsserts.h; path = Classes/KZAsserts.h; sourceTree = "<group>"; };
-		BED23ED3F92A11DBAA1C9453 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
-		C9618306644E913AB914A641 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC2BCF23E966F6DACDD6D397 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
-		DFC179ED68038BA645285C7F /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		F905BBD8239AE832A32E2975 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		018F4420FA30056CBA761C49 /* TWTextViewWithMaxLengthDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TWTextViewWithMaxLengthDelegate.m; path = TWCommonLib/TWCommonLib/TWTextViewWithMaxLengthDelegate.m; sourceTree = "<group>"; };
+		0296354AC5A2D3A753DA5559 /* UIImage+TWByOverlayingImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+TWByOverlayingImage.h"; path = "TWCommonLib/TWCommonLib/UIImage+TWByOverlayingImage.h"; sourceTree = "<group>"; };
+		07EE828A01485389109AC715 /* Pods-TWCommonLib-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TWCommonLib-prefix.pch"; sourceTree = "<group>"; };
+		0B04584AD6461E15B518507C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DBE9C3AD183107BCBC3E8C3 /* Pods-KZAsserts.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KZAsserts.xcconfig"; sourceTree = "<group>"; };
+		1096E4089125A35DC0229B7A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		122CDD24EC6070B8ABCCA654 /* TWDispatchMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TWDispatchMacros.h; path = TWCommonLib/TWCommonLib/TWDispatchMacros.h; sourceTree = "<group>"; };
+		1426F89F983BA83318484A98 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		16F754907413C0FD84439D24 /* TWJSONHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TWJSONHelper.h; path = TWCommonLib/TWCommonLib/TWJSONHelper.h; sourceTree = "<group>"; };
+		19B9189861AEAD294B82A51E /* UIViewController+PerformSegueMapping.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+PerformSegueMapping.m"; path = "TWCommonLib/TWCommonLib/UIViewController+PerformSegueMapping.m"; sourceTree = "<group>"; };
+		1D905967CE136C3CD481AFA4 /* TWOrientationChangeDetectorUsingAccelerometer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TWOrientationChangeDetectorUsingAccelerometer.h; path = TWCommonLib/TWCommonLib/TWOrientationChangeDetectorUsingAccelerometer.h; sourceTree = "<group>"; };
+		224448EA558BEDFC7D10CBBA /* libPods-KZAsserts.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KZAsserts.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		237BDB3E116768DE7BE76F56 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
+		2839972EFEE361884BAACCC0 /* TWSimpleMapViewDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TWSimpleMapViewDelegate.m; path = TWCommonLib/TWCommonLib/TWSimpleMapViewDelegate.m; sourceTree = "<group>"; };
+		31E350B5552908BF3BD16EE1 /* NSLayoutConstraint+TWAnimations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+TWAnimations.h"; path = "TWCommonLib/TWCommonLib/NSLayoutConstraint+TWAnimations.h"; sourceTree = "<group>"; };
+		33F4789BAE2E87C41F41E19B /* Pods-TWCommonLib-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TWCommonLib-dummy.m"; sourceTree = "<group>"; };
+		3524259A7751E8E0A3DA1BB7 /* Pods-KZAsserts-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KZAsserts-dummy.m"; sourceTree = "<group>"; };
+		369CA211B815B72D2E35C4C7 /* TWCommonLib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TWCommonLib.h; path = TWCommonLib/TWCommonLib/TWCommonLib.h; sourceTree = "<group>"; };
+		38A462DFADBBE1A179FD969A /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3A41B7E6874D4C5033CD4FD6 /* KZAsserts.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KZAsserts.h; path = Classes/KZAsserts.h; sourceTree = "<group>"; };
+		3FE5F27D682F8833617E027D /* UIView+LayerDecoration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+LayerDecoration.h"; path = "TWCommonLib/TWCommonLib/UIView+LayerDecoration.h"; sourceTree = "<group>"; };
+		43A669B308EE0A10F5D5B818 /* NSLayoutConstraint+ConstraintCopying.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+ConstraintCopying.m"; path = "TWCommonLib/TWCommonLib/NSLayoutConstraint+ConstraintCopying.m"; sourceTree = "<group>"; };
+		477AB4BE1AD33A4A708FC25C /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		49D69E31FE0DA4F7E1A6CE11 /* UIImagePickerController+TWCameraDeviceSwitching.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImagePickerController+TWCameraDeviceSwitching.m"; path = "TWCommonLib/TWCommonLib/UIImagePickerController+TWCameraDeviceSwitching.m"; sourceTree = "<group>"; };
+		4A375C3B459874A19869D61F /* Pods-TWCommonLib.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TWCommonLib.xcconfig"; sourceTree = "<group>"; };
+		4CE37ACFCDA546A61EF9D68F /* UIView+LayerDecoration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+LayerDecoration.m"; path = "TWCommonLib/TWCommonLib/UIView+LayerDecoration.m"; sourceTree = "<group>"; };
+		4DCE39A15D15F2149081D255 /* UIView+TWFadeAnimations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+TWFadeAnimations.h"; path = "TWCommonLib/TWCommonLib/UIView+TWFadeAnimations.h"; sourceTree = "<group>"; };
+		4FBB563F943151264DFE359F /* TWUIImagePickerHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TWUIImagePickerHelper.h; path = TWCommonLib/TWCommonLib/TWUIImagePickerHelper.h; sourceTree = "<group>"; };
+		51A03A5306DF1D53E0E533E6 /* TWOrientationChangeDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TWOrientationChangeDelegate.h; path = TWCommonLib/TWCommonLib/TWOrientationChangeDelegate.h; sourceTree = "<group>"; };
+		5460C5DF22BF0B970BC58B9C /* Pods-KZAsserts-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KZAsserts-Private.xcconfig"; sourceTree = "<group>"; };
+		55AF1F395A314BA1595E6CCC /* TWMapKitHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TWMapKitHelper.m; path = TWCommonLib/TWCommonLib/TWMapKitHelper.m; sourceTree = "<group>"; };
+		59757794E7CCBA5952F52C6C /* TWAlertFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TWAlertFactory.h; path = TWCommonLib/TWCommonLib/TWAlertFactory.h; sourceTree = "<group>"; };
+		59EF36311B4A0B9DA7054E46 /* TWDataWriteHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TWDataWriteHelper.m; path = TWCommonLib/TWCommonLib/TWDataWriteHelper.m; sourceTree = "<group>"; };
+		5B6F312FE354B963436F567B /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		677440F11520DAE5AE93C772 /* UIImage+TWCreateImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+TWCreateImage.m"; path = "TWCommonLib/TWCommonLib/UIImage+TWCreateImage.m"; sourceTree = "<group>"; };
+		68AE65AA2CD11EC9E941BC62 /* TWLocationUpdatesManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TWLocationUpdatesManager.m; path = TWCommonLib/TWCommonLib/TWLocationUpdatesManager.m; sourceTree = "<group>"; };
+		6A7DC8F68A46FD78F2E9A6C7 /* TWCoordinateSystemConverter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TWCoordinateSystemConverter.m; path = TWCommonLib/TWCommonLib/TWCoordinateSystemConverter.m; sourceTree = "<group>"; };
+		6AA2636BA8A2AC25ADD1C439 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		6B394F96E1C6FAA79FB884AB /* NSSet+TWSetByRemoving.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSSet+TWSetByRemoving.h"; path = "TWCommonLib/TWCommonLib/NSSet+TWSetByRemoving.h"; sourceTree = "<group>"; };
+		6B7523D6734861F1B075C705 /* KZAsserts.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KZAsserts.m; path = Classes/KZAsserts.m; sourceTree = "<group>"; };
+		6F90CA12E2E7BD0C7D000F60 /* TWLocationUpdatesManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TWLocationUpdatesManager.h; path = TWCommonLib/TWCommonLib/TWLocationUpdatesManager.h; sourceTree = "<group>"; };
+		7026F74A9F2E837B0E5F86F7 /* TWDataWriteHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TWDataWriteHelper.h; path = TWCommonLib/TWCommonLib/TWDataWriteHelper.h; sourceTree = "<group>"; };
+		7B5B9D62853F0E75547B2F06 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		7F6F56981750044AC3DC660A /* TWArrayTableViewDataSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TWArrayTableViewDataSource.m; path = TWCommonLib/TWCommonLib/TWArrayTableViewDataSource.m; sourceTree = "<group>"; };
+		7F8C0558A19B5E92AB3044CE /* TWTextViewWithMaxLengthDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TWTextViewWithMaxLengthDelegate.h; path = TWCommonLib/TWCommonLib/TWTextViewWithMaxLengthDelegate.h; sourceTree = "<group>"; };
+		809749A09AB420D5BFF6746A /* TWCommonFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TWCommonFunctions.m; path = TWCommonLib/TWCommonLib/TWCommonFunctions.m; sourceTree = "<group>"; };
+		80BF4FE5072437E7FD4C1497 /* TWItemsToSeguesMapping.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TWItemsToSeguesMapping.m; path = TWCommonLib/TWCommonLib/TWItemsToSeguesMapping.m; sourceTree = "<group>"; };
+		8109BA27D26F1CED9F7CA5D6 /* UIImage+TWCreateImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+TWCreateImage.h"; path = "TWCommonLib/TWCommonLib/UIImage+TWCreateImage.h"; sourceTree = "<group>"; };
+		84C5C67C524560B069BFF032 /* TWAlertFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TWAlertFactory.m; path = TWCommonLib/TWCommonLib/TWAlertFactory.m; sourceTree = "<group>"; };
+		866A3512AA2B35B9C1E5D536 /* TWCommonMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TWCommonMacros.h; path = TWCommonLib/TWCommonLib/TWCommonMacros.h; sourceTree = "<group>"; };
+		870D7C1DBFF5D01240C614DF /* NSLayoutConstraint+ConstraintCopying.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+ConstraintCopying.h"; path = "TWCommonLib/TWCommonLib/NSLayoutConstraint+ConstraintCopying.h"; sourceTree = "<group>"; };
+		8B8FE5FE8E5EE9EACDBE8232 /* TWJSONHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TWJSONHelper.m; path = TWCommonLib/TWCommonLib/TWJSONHelper.m; sourceTree = "<group>"; };
+		8D8F35791E5888D00AA2D939 /* UIImage+TWConvenience.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+TWConvenience.h"; path = "TWCommonLib/TWCommonLib/UIImage+TWConvenience.h"; sourceTree = "<group>"; };
+		8E50F47AFFEE9CF25603DB7D /* TWRectangleMath.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TWRectangleMath.m; path = TWCommonLib/TWCommonLib/TWRectangleMath.m; sourceTree = "<group>"; };
+		91C17D59FAA9B85A95D36403 /* UIView+TWSizes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+TWSizes.h"; path = "TWCommonLib/TWCommonLib/UIView+TWSizes.h"; sourceTree = "<group>"; };
+		9C3945D1209B720AF3DA44AC /* UIImagePickerController+TWCameraDeviceSwitching.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImagePickerController+TWCameraDeviceSwitching.h"; path = "TWCommonLib/TWCommonLib/UIImagePickerController+TWCameraDeviceSwitching.h"; sourceTree = "<group>"; };
+		9C6EBE96469DE48B36292B8F /* TWCommonFunctions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TWCommonFunctions.h; path = TWCommonLib/TWCommonLib/TWCommonFunctions.h; sourceTree = "<group>"; };
+		A3AC5AB3D39B6163CFF917E8 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		A4E91D52310C97EA892B2B85 /* TWScrollViewDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TWScrollViewDelegate.m; path = TWCommonLib/TWCommonLib/TWScrollViewDelegate.m; sourceTree = "<group>"; };
+		A5592A9D29FE44310DEA1010 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
+		A8E0AFC404A1CBC86C743AA2 /* TWSimpleTableViewDataSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TWSimpleTableViewDataSource.m; path = TWCommonLib/TWCommonLib/TWSimpleTableViewDataSource.m; sourceTree = "<group>"; };
+		AA6FDB089639434D1841D9B1 /* TWRectangleMath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TWRectangleMath.h; path = TWCommonLib/TWCommonLib/TWRectangleMath.h; sourceTree = "<group>"; };
+		ABCD9AEB5703CFBBE1DE7A08 /* TWSimpleTableViewDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TWSimpleTableViewDataSource.h; path = TWCommonLib/TWCommonLib/TWSimpleTableViewDataSource.h; sourceTree = "<group>"; };
+		AC18B399F1F32A6D4EE25B5E /* TWOrientationChangeDetectorUsingAccelerometer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TWOrientationChangeDetectorUsingAccelerometer.m; path = TWCommonLib/TWCommonLib/TWOrientationChangeDetectorUsingAccelerometer.m; sourceTree = "<group>"; };
+		B04387410601F55D939C0217 /* TWOrientationChangeDetector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TWOrientationChangeDetector.m; path = TWCommonLib/TWCommonLib/TWOrientationChangeDetector.m; sourceTree = "<group>"; };
+		B550CBD40C984BD098118E6F /* Pods-KZAsserts-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KZAsserts-prefix.pch"; sourceTree = "<group>"; };
+		B71DED8564DBD83D043E8559 /* TWUIImagePickerHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TWUIImagePickerHelper.m; path = TWCommonLib/TWCommonLib/TWUIImagePickerHelper.m; sourceTree = "<group>"; };
+		BC49207983A6532D37F49EED /* TWArrayTableViewDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TWArrayTableViewDataSource.h; path = TWCommonLib/TWCommonLib/TWArrayTableViewDataSource.h; sourceTree = "<group>"; };
+		BCDCFE50E4123CC752EA9637 /* TWSimpleTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TWSimpleTableViewCell.h; path = TWCommonLib/TWCommonLib/TWSimpleTableViewCell.h; sourceTree = "<group>"; };
+		C4C86EAA1E8527062BDEA7D1 /* NSSet+TWSetByRemoving.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSSet+TWSetByRemoving.m"; path = "TWCommonLib/TWCommonLib/NSSet+TWSetByRemoving.m"; sourceTree = "<group>"; };
+		C5BD6EE195E3E108004F0CAD /* NSObject+TWObjectLifetime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+TWObjectLifetime.h"; path = "TWCommonLib/TWCommonLib/NSObject+TWObjectLifetime.h"; sourceTree = "<group>"; };
+		C71F218A2B80582D49883755 /* UIImage+TWByOverlayingImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+TWByOverlayingImage.m"; path = "TWCommonLib/TWCommonLib/UIImage+TWByOverlayingImage.m"; sourceTree = "<group>"; };
+		C8DFE8EB6613E38BC4B8413F /* NSObject+TWObjectLifetime.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+TWObjectLifetime.m"; path = "TWCommonLib/TWCommonLib/NSObject+TWObjectLifetime.m"; sourceTree = "<group>"; };
+		C99C77A8F0BEA8B3EF27E3BC /* UIViewController+PerformSegueMapping.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+PerformSegueMapping.h"; path = "TWCommonLib/TWCommonLib/UIViewController+PerformSegueMapping.h"; sourceTree = "<group>"; };
+		DBF6859F2196346318BC66DC /* TWDispatchMacros.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TWDispatchMacros.m; path = TWCommonLib/TWCommonLib/TWDispatchMacros.m; sourceTree = "<group>"; };
+		DC2812FB56EAFFA5CDA0CAE3 /* TWSimpleTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TWSimpleTableViewCell.m; path = TWCommonLib/TWCommonLib/TWSimpleTableViewCell.m; sourceTree = "<group>"; };
+		DD7685AAF679D4DE7E1857CE /* TWSimpleMapViewDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TWSimpleMapViewDelegate.h; path = TWCommonLib/TWCommonLib/TWSimpleMapViewDelegate.h; sourceTree = "<group>"; };
+		DDEDAB80D8403EAB090D6D92 /* Pods-TWCommonLib-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TWCommonLib-Private.xcconfig"; sourceTree = "<group>"; };
+		E009CF9D39644E33B17D3362 /* NSLayoutConstraint+TWAnimations.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+TWAnimations.m"; path = "TWCommonLib/TWCommonLib/NSLayoutConstraint+TWAnimations.m"; sourceTree = "<group>"; };
+		E0AEBB7F2ECD02F7CFFB05F2 /* UIView+TWSizes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+TWSizes.m"; path = "TWCommonLib/TWCommonLib/UIView+TWSizes.m"; sourceTree = "<group>"; };
+		E1FAF5AD0589B7CEF40BCB6E /* UIImage+TWConvenience.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+TWConvenience.m"; path = "TWCommonLib/TWCommonLib/UIImage+TWConvenience.m"; sourceTree = "<group>"; };
+		E567CA5693FC46A5BA855516 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		E60C59346899CC6C66B1A6A7 /* TWCommonTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TWCommonTypes.h; path = TWCommonLib/TWCommonLib/TWCommonTypes.h; sourceTree = "<group>"; };
+		E62BDF2161BC9850C2AA35D8 /* TWCoordinateSystemConverter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TWCoordinateSystemConverter.h; path = TWCommonLib/TWCommonLib/TWCoordinateSystemConverter.h; sourceTree = "<group>"; };
+		EAA361A8E78D32D567A3F79A /* libPods-TWCommonLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TWCommonLib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC22EA096FAF1099F1C491B9 /* TWSimpleTableViewDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TWSimpleTableViewDelegate.h; path = TWCommonLib/TWCommonLib/TWSimpleTableViewDelegate.h; sourceTree = "<group>"; };
+		EE0A7FA41EB6BA1561D02E5D /* TWScrollViewDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TWScrollViewDelegate.h; path = TWCommonLib/TWCommonLib/TWScrollViewDelegate.h; sourceTree = "<group>"; };
+		F05AF6028903B9527758FB10 /* TWSimpleTableViewDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TWSimpleTableViewDelegate.m; path = TWCommonLib/TWCommonLib/TWSimpleTableViewDelegate.m; sourceTree = "<group>"; };
+		F0897BDBECCA5595449211D2 /* TWItemsToSeguesMapping.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TWItemsToSeguesMapping.h; path = TWCommonLib/TWCommonLib/TWItemsToSeguesMapping.h; sourceTree = "<group>"; };
+		F25F0337F0794999BB7F592F /* UIView+TWFadeAnimations.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+TWFadeAnimations.m"; path = "TWCommonLib/TWCommonLib/UIView+TWFadeAnimations.m"; sourceTree = "<group>"; };
+		F947FE7B5E82BF19D8BF5C57 /* TWOrientationChangeDetector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TWOrientationChangeDetector.h; path = TWCommonLib/TWCommonLib/TWOrientationChangeDetector.h; sourceTree = "<group>"; };
+		FF67E96482EE068665D4A518 /* TWMapKitHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TWMapKitHelper.h; path = TWCommonLib/TWCommonLib/TWMapKitHelper.h; sourceTree = "<group>"; };
+		FF76AA2E4DB9BC7375E3C0A5 /* TWOrientationChangeDetectorProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TWOrientationChangeDetectorProtocol.h; path = TWCommonLib/TWCommonLib/TWOrientationChangeDetectorProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		473B76C0EB9F7CA6651F95B0 /* Frameworks */ = {
+		4099928FD92D0CAABE7A6A03 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D6874B817A6B87B3D11156F /* Foundation.framework in Frameworks */,
+				A42DD425188F55D5D5AA57C6 /* CoreMotion.framework in Frameworks */,
+				945B389ABEBDF8DC4833CA7B /* Foundation.framework in Frameworks */,
+				551702BBC7787B0329F21D13 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		522E9D7A68A2AF5FB9009046 /* Frameworks */ = {
+		6BC372A77B6FBA839022B636 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A08959C663AA2D6558A809A /* Foundation.framework in Frameworks */,
+				35794F6D74BF95D0B2F3B0DD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7395A0AB0CBCA6A302769861 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0A521A046903C516D687B60 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0448CD51369D6BC9B2F731A8 /* Pods */ = {
+		081912400278E8B2B1547BF3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1A3852BB4B190428D0FCF8BC /* Pods-acknowledgements.markdown */,
-				42DC569FAE84BC0771CDFDC9 /* Pods-acknowledgements.plist */,
-				F905BBD8239AE832A32E2975 /* Pods-dummy.m */,
-				BED23ED3F92A11DBAA1C9453 /* Pods-environment.h */,
-				DFC179ED68038BA645285C7F /* Pods-resources.sh */,
-				DC2BCF23E966F6DACDD6D397 /* Pods.debug.xcconfig */,
-				0C7F0D7BB8C5C58D53F07F66 /* Pods.release.xcconfig */,
+				AF6C45E38F2FD597C8579B02 /* KZAsserts */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2DB7FD3F4D67058B2E7A343A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				38A462DFADBBE1A179FD969A /* Pods-acknowledgements.markdown */,
+				5B6F312FE354B963436F567B /* Pods-acknowledgements.plist */,
+				1426F89F983BA83318484A98 /* Pods-dummy.m */,
+				A3AC5AB3D39B6163CFF917E8 /* Pods-environment.h */,
+				E567CA5693FC46A5BA855516 /* Pods-resources.sh */,
+				6AA2636BA8A2AC25ADD1C439 /* Pods.debug.xcconfig */,
+				7B5B9D62853F0E75547B2F06 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
 			path = "Target Support Files/Pods";
 			sourceTree = "<group>";
 		};
-		1A1B2EF708B5CC83FFBFCCEA /* KZAsserts */ = {
+		3A4213B0AA9D52E3A606094E /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AA3386236A5D6223D012F2CD /* KZAsserts.h */,
-				00D46C8EC92CB206C6933ABC /* KZAsserts.m */,
-				3663F8B133FD20F19484FB9C /* Support Files */,
+				D0069254F4E56366AE0895B8 /* TWCommonLib */,
 			);
-			path = KZAsserts;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		220DFF305DC580767452975E = {
+		413B988958193880B8D4CD7E /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				860343C33AAA8202424A6AD9 /* Podfile */,
-				F49F720B03C6CDA42BA42600 /* Frameworks */,
-				807873181A03E154B74FBDDE /* Pods */,
-				BBD6758F09313B288A6A119F /* Products */,
-				27D5C6423E4AEDCC2DBEDE0E /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		27D5C6423E4AEDCC2DBEDE0E /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				0448CD51369D6BC9B2F731A8 /* Pods */,
+				2DB7FD3F4D67058B2E7A343A /* Pods */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		3663F8B133FD20F19484FB9C /* Support Files */ = {
+		52C2E9F9C381A31A704BE86D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				68F62926DF30CA5F6685802E /* Pods-KZAsserts.xcconfig */,
-				6268BABF9FD89D96FEB52DD2 /* Pods-KZAsserts-Private.xcconfig */,
-				7F32C69AE128E2026A6E7445 /* Pods-KZAsserts-dummy.m */,
-				6514D836D079B28362AE54C1 /* Pods-KZAsserts-prefix.pch */,
+				0B04584AD6461E15B518507C /* libPods.a */,
+				224448EA558BEDFC7D10CBBA /* libPods-KZAsserts.a */,
+				EAA361A8E78D32D567A3F79A /* libPods-TWCommonLib.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF6C45E38F2FD597C8579B02 /* KZAsserts */ = {
+			isa = PBXGroup;
+			children = (
+				3A41B7E6874D4C5033CD4FD6 /* KZAsserts.h */,
+				6B7523D6734861F1B075C705 /* KZAsserts.m */,
+				E06509727594D90056C2F574 /* Support Files */,
+			);
+			path = KZAsserts;
+			sourceTree = "<group>";
+		};
+		B5371881D5942E06917CFA2E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4A375C3B459874A19869D61F /* Pods-TWCommonLib.xcconfig */,
+				DDEDAB80D8403EAB090D6D92 /* Pods-TWCommonLib-Private.xcconfig */,
+				33F4789BAE2E87C41F41E19B /* Pods-TWCommonLib-dummy.m */,
+				07EE828A01485389109AC715 /* Pods-TWCommonLib-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../../TWUIComponents/Pods/Target Support Files/Pods-TWCommonLib";
+			sourceTree = "<group>";
+		};
+		B61BFF8E704133904B59ECD4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EAA6A7CDDFAE071887FEA846 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D0069254F4E56366AE0895B8 /* TWCommonLib */ = {
+			isa = PBXGroup;
+			children = (
+				870D7C1DBFF5D01240C614DF /* NSLayoutConstraint+ConstraintCopying.h */,
+				43A669B308EE0A10F5D5B818 /* NSLayoutConstraint+ConstraintCopying.m */,
+				31E350B5552908BF3BD16EE1 /* NSLayoutConstraint+TWAnimations.h */,
+				E009CF9D39644E33B17D3362 /* NSLayoutConstraint+TWAnimations.m */,
+				C5BD6EE195E3E108004F0CAD /* NSObject+TWObjectLifetime.h */,
+				C8DFE8EB6613E38BC4B8413F /* NSObject+TWObjectLifetime.m */,
+				6B394F96E1C6FAA79FB884AB /* NSSet+TWSetByRemoving.h */,
+				C4C86EAA1E8527062BDEA7D1 /* NSSet+TWSetByRemoving.m */,
+				59757794E7CCBA5952F52C6C /* TWAlertFactory.h */,
+				84C5C67C524560B069BFF032 /* TWAlertFactory.m */,
+				BC49207983A6532D37F49EED /* TWArrayTableViewDataSource.h */,
+				7F6F56981750044AC3DC660A /* TWArrayTableViewDataSource.m */,
+				9C6EBE96469DE48B36292B8F /* TWCommonFunctions.h */,
+				809749A09AB420D5BFF6746A /* TWCommonFunctions.m */,
+				369CA211B815B72D2E35C4C7 /* TWCommonLib.h */,
+				866A3512AA2B35B9C1E5D536 /* TWCommonMacros.h */,
+				E60C59346899CC6C66B1A6A7 /* TWCommonTypes.h */,
+				E62BDF2161BC9850C2AA35D8 /* TWCoordinateSystemConverter.h */,
+				6A7DC8F68A46FD78F2E9A6C7 /* TWCoordinateSystemConverter.m */,
+				7026F74A9F2E837B0E5F86F7 /* TWDataWriteHelper.h */,
+				59EF36311B4A0B9DA7054E46 /* TWDataWriteHelper.m */,
+				122CDD24EC6070B8ABCCA654 /* TWDispatchMacros.h */,
+				DBF6859F2196346318BC66DC /* TWDispatchMacros.m */,
+				F0897BDBECCA5595449211D2 /* TWItemsToSeguesMapping.h */,
+				80BF4FE5072437E7FD4C1497 /* TWItemsToSeguesMapping.m */,
+				16F754907413C0FD84439D24 /* TWJSONHelper.h */,
+				8B8FE5FE8E5EE9EACDBE8232 /* TWJSONHelper.m */,
+				6F90CA12E2E7BD0C7D000F60 /* TWLocationUpdatesManager.h */,
+				68AE65AA2CD11EC9E941BC62 /* TWLocationUpdatesManager.m */,
+				FF67E96482EE068665D4A518 /* TWMapKitHelper.h */,
+				55AF1F395A314BA1595E6CCC /* TWMapKitHelper.m */,
+				51A03A5306DF1D53E0E533E6 /* TWOrientationChangeDelegate.h */,
+				F947FE7B5E82BF19D8BF5C57 /* TWOrientationChangeDetector.h */,
+				B04387410601F55D939C0217 /* TWOrientationChangeDetector.m */,
+				FF76AA2E4DB9BC7375E3C0A5 /* TWOrientationChangeDetectorProtocol.h */,
+				1D905967CE136C3CD481AFA4 /* TWOrientationChangeDetectorUsingAccelerometer.h */,
+				AC18B399F1F32A6D4EE25B5E /* TWOrientationChangeDetectorUsingAccelerometer.m */,
+				AA6FDB089639434D1841D9B1 /* TWRectangleMath.h */,
+				8E50F47AFFEE9CF25603DB7D /* TWRectangleMath.m */,
+				EE0A7FA41EB6BA1561D02E5D /* TWScrollViewDelegate.h */,
+				A4E91D52310C97EA892B2B85 /* TWScrollViewDelegate.m */,
+				DD7685AAF679D4DE7E1857CE /* TWSimpleMapViewDelegate.h */,
+				2839972EFEE361884BAACCC0 /* TWSimpleMapViewDelegate.m */,
+				BCDCFE50E4123CC752EA9637 /* TWSimpleTableViewCell.h */,
+				DC2812FB56EAFFA5CDA0CAE3 /* TWSimpleTableViewCell.m */,
+				ABCD9AEB5703CFBBE1DE7A08 /* TWSimpleTableViewDataSource.h */,
+				A8E0AFC404A1CBC86C743AA2 /* TWSimpleTableViewDataSource.m */,
+				EC22EA096FAF1099F1C491B9 /* TWSimpleTableViewDelegate.h */,
+				F05AF6028903B9527758FB10 /* TWSimpleTableViewDelegate.m */,
+				7F8C0558A19B5E92AB3044CE /* TWTextViewWithMaxLengthDelegate.h */,
+				018F4420FA30056CBA761C49 /* TWTextViewWithMaxLengthDelegate.m */,
+				4FBB563F943151264DFE359F /* TWUIImagePickerHelper.h */,
+				B71DED8564DBD83D043E8559 /* TWUIImagePickerHelper.m */,
+				0296354AC5A2D3A753DA5559 /* UIImage+TWByOverlayingImage.h */,
+				C71F218A2B80582D49883755 /* UIImage+TWByOverlayingImage.m */,
+				8D8F35791E5888D00AA2D939 /* UIImage+TWConvenience.h */,
+				E1FAF5AD0589B7CEF40BCB6E /* UIImage+TWConvenience.m */,
+				8109BA27D26F1CED9F7CA5D6 /* UIImage+TWCreateImage.h */,
+				677440F11520DAE5AE93C772 /* UIImage+TWCreateImage.m */,
+				9C3945D1209B720AF3DA44AC /* UIImagePickerController+TWCameraDeviceSwitching.h */,
+				49D69E31FE0DA4F7E1A6CE11 /* UIImagePickerController+TWCameraDeviceSwitching.m */,
+				3FE5F27D682F8833617E027D /* UIView+LayerDecoration.h */,
+				4CE37ACFCDA546A61EF9D68F /* UIView+LayerDecoration.m */,
+				4DCE39A15D15F2149081D255 /* UIView+TWFadeAnimations.h */,
+				F25F0337F0794999BB7F592F /* UIView+TWFadeAnimations.m */,
+				91C17D59FAA9B85A95D36403 /* UIView+TWSizes.h */,
+				E0AEBB7F2ECD02F7CFFB05F2 /* UIView+TWSizes.m */,
+				C99C77A8F0BEA8B3EF27E3BC /* UIViewController+PerformSegueMapping.h */,
+				19B9189861AEAD294B82A51E /* UIViewController+PerformSegueMapping.m */,
+				B5371881D5942E06917CFA2E /* Support Files */,
+			);
+			name = TWCommonLib;
+			path = ../../PlayerAid/TWCommonLib;
+			sourceTree = "<group>";
+		};
+		D2D4E0159FE6D2BE01F3AD6F = {
+			isa = PBXGroup;
+			children = (
+				477AB4BE1AD33A4A708FC25C /* Podfile */,
+				3A4213B0AA9D52E3A606094E /* Development Pods */,
+				B61BFF8E704133904B59ECD4 /* Frameworks */,
+				081912400278E8B2B1547BF3 /* Pods */,
+				52C2E9F9C381A31A704BE86D /* Products */,
+				413B988958193880B8D4CD7E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E06509727594D90056C2F574 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0DBE9C3AD183107BCBC3E8C3 /* Pods-KZAsserts.xcconfig */,
+				5460C5DF22BF0B970BC58B9C /* Pods-KZAsserts-Private.xcconfig */,
+				3524259A7751E8E0A3DA1BB7 /* Pods-KZAsserts-dummy.m */,
+				B550CBD40C984BD098118E6F /* Pods-KZAsserts-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Pods-KZAsserts";
 			sourceTree = "<group>";
 		};
-		807873181A03E154B74FBDDE /* Pods */ = {
+		EAA6A7CDDFAE071887FEA846 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				1A1B2EF708B5CC83FFBFCCEA /* KZAsserts */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		AD4CCD01B70DC9D6CB120628 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				456DDF797F71B5F46D802914 /* Foundation.framework */,
+				A5592A9D29FE44310DEA1010 /* CoreMotion.framework */,
+				1096E4089125A35DC0229B7A /* Foundation.framework */,
+				237BDB3E116768DE7BE76F56 /* MapKit.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		BBD6758F09313B288A6A119F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C9618306644E913AB914A641 /* libPods.a */,
-				41503B856447A9F38145AF3D /* libPods-KZAsserts.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		F49F720B03C6CDA42BA42600 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				AD4CCD01B70DC9D6CB120628 /* iOS */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		8F2E30CFA1EFC77F154455F2 /* Headers */ = {
+		220CE73FABCEEFA5B41F604E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3C30480FD9B5F4A5364AA4B /* KZAsserts.h in Headers */,
+				0712297DF254F77144886A38 /* KZAsserts.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C23644D1F224A9BE2C9A2432 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F59DD25B7799C8E582AF898E /* NSLayoutConstraint+ConstraintCopying.h in Headers */,
+				3C35E66534F377DA6BEF7EBF /* NSLayoutConstraint+TWAnimations.h in Headers */,
+				F5543CA5049715ABFBB90796 /* NSObject+TWObjectLifetime.h in Headers */,
+				A253B4AADA6FF79DF98BD157 /* NSSet+TWSetByRemoving.h in Headers */,
+				792BDDC2E95499BDAE465856 /* TWAlertFactory.h in Headers */,
+				FD363B4322E84409055683ED /* TWArrayTableViewDataSource.h in Headers */,
+				7AA00B2133EC43DBBA18CB02 /* TWCommonFunctions.h in Headers */,
+				5410D8E13DA185394CD41B40 /* TWCommonLib.h in Headers */,
+				F891F0F336C792F8224ECFEA /* TWCommonMacros.h in Headers */,
+				66932330958F2AFCA41D6B1D /* TWCommonTypes.h in Headers */,
+				CB1384510FDCBAD4F75BAF88 /* TWCoordinateSystemConverter.h in Headers */,
+				F3ADA6A6B507A3EE2A29CD46 /* TWDataWriteHelper.h in Headers */,
+				2D930383509CB50C3CFCBD71 /* TWDispatchMacros.h in Headers */,
+				14B3B2C27B461A90E7175754 /* TWItemsToSeguesMapping.h in Headers */,
+				2465FC3B81D7B331C4AC4C39 /* TWJSONHelper.h in Headers */,
+				2D8C251D0AAC6293B0F8CF53 /* TWLocationUpdatesManager.h in Headers */,
+				A79581940BB61D3BBF80B431 /* TWMapKitHelper.h in Headers */,
+				FEF9231662615F3FD5386614 /* TWOrientationChangeDelegate.h in Headers */,
+				5A549BDF384507A085D08DE9 /* TWOrientationChangeDetector.h in Headers */,
+				F27A20F30E932EEB735974FB /* TWOrientationChangeDetectorProtocol.h in Headers */,
+				E0F88715BBBF6728D803D341 /* TWOrientationChangeDetectorUsingAccelerometer.h in Headers */,
+				2509D22C142BCE22856AF2A6 /* TWRectangleMath.h in Headers */,
+				9CA92BFE577AE6FC906889F1 /* TWScrollViewDelegate.h in Headers */,
+				7BC9F45D16B15145FF51FF98 /* TWSimpleMapViewDelegate.h in Headers */,
+				A827DE7F829208664F2B2390 /* TWSimpleTableViewCell.h in Headers */,
+				4E1B205A376FA2E74390E247 /* TWSimpleTableViewDataSource.h in Headers */,
+				2ABA4E3FB69046D438A45B79 /* TWSimpleTableViewDelegate.h in Headers */,
+				E0495AA3F98C5C9CA4BEBF33 /* TWTextViewWithMaxLengthDelegate.h in Headers */,
+				0C1B5B60A2AD8E4550978939 /* TWUIImagePickerHelper.h in Headers */,
+				73C6EC67CBE57A4A1682E75E /* UIImage+TWByOverlayingImage.h in Headers */,
+				0712A9797B37329855DA8F09 /* UIImage+TWConvenience.h in Headers */,
+				ACA0DC15BC1D07C0A93908D4 /* UIImage+TWCreateImage.h in Headers */,
+				4911A8A74B2F27D8F3AB0215 /* UIImagePickerController+TWCameraDeviceSwitching.h in Headers */,
+				72A25556CB5D097C27D27530 /* UIView+LayerDecoration.h in Headers */,
+				51CAAD124E130333052FC449 /* UIView+TWFadeAnimations.h in Headers */,
+				379000ABF9FFA20585C2644F /* UIView+TWSizes.h in Headers */,
+				50CE777F1B78C5D1E6D18B94 /* UIViewController+PerformSegueMapping.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		6E95ACC603942F7820612763 /* Pods */ = {
+		09D64CD92A72F97B8ED9E6FC /* Pods */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E13F792381DBAF40903DA6C6 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildConfigurationList = 35A004A450D3EDD0CE88D6A1 /* Build configuration list for PBXNativeTarget "Pods" */;
 			buildPhases = (
-				E35544CC78207E0917EE097A /* Sources */,
-				522E9D7A68A2AF5FB9009046 /* Frameworks */,
+				167D8DBFCD9C86EF36C023EA /* Sources */,
+				7395A0AB0CBCA6A302769861 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FC8596CF4CBA7F6123A0CAEA /* PBXTargetDependency */,
+				6F31BFE4FC8642ED0CF4839E /* PBXTargetDependency */,
+				DE61B3DF97374848CA952386 /* PBXTargetDependency */,
 			);
 			name = Pods;
 			productName = Pods;
-			productReference = C9618306644E913AB914A641 /* libPods.a */;
+			productReference = 0B04584AD6461E15B518507C /* libPods.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		875B074F53DD444E9A7E9E9F /* Pods-KZAsserts */ = {
+		5049150096E1773546E07392 /* Pods-TWCommonLib */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5CE47CC2AA9EF862004BFA54 /* Build configuration list for PBXNativeTarget "Pods-KZAsserts" */;
+			buildConfigurationList = 0A0E95D0D9A28CCAF1D4C028 /* Build configuration list for PBXNativeTarget "Pods-TWCommonLib" */;
 			buildPhases = (
-				8BD0D362760475B351026C2B /* Sources */,
-				473B76C0EB9F7CA6651F95B0 /* Frameworks */,
-				8F2E30CFA1EFC77F154455F2 /* Headers */,
+				7E013DC05CF552B28E5EF56F /* Sources */,
+				4099928FD92D0CAABE7A6A03 /* Frameworks */,
+				C23644D1F224A9BE2C9A2432 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TWCommonLib";
+			productName = "Pods-TWCommonLib";
+			productReference = EAA361A8E78D32D567A3F79A /* libPods-TWCommonLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F27ACFEBD09A936A41A093E0 /* Pods-KZAsserts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C2FEBC258BE0671666E5A00 /* Build configuration list for PBXNativeTarget "Pods-KZAsserts" */;
+			buildPhases = (
+				D92419B89699AAD62214C681 /* Sources */,
+				6BC372A77B6FBA839022B636 /* Frameworks */,
+				220CE73FABCEEFA5B41F604E /* Headers */,
 			);
 			buildRules = (
 			);
@@ -199,68 +529,142 @@
 			);
 			name = "Pods-KZAsserts";
 			productName = "Pods-KZAsserts";
-			productReference = 41503B856447A9F38145AF3D /* libPods-KZAsserts.a */;
+			productReference = 224448EA558BEDFC7D10CBBA /* libPods-KZAsserts.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		3CEB9BFD4DD83E61A1986569 /* Project object */ = {
+		9397B0479EFC96B14ADC9CD7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
 			};
-			buildConfigurationList = A901FEE939600EBBFC5F1B87 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 3A515B4E85AD403471BC43F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 220DFF305DC580767452975E;
-			productRefGroup = BBD6758F09313B288A6A119F /* Products */;
+			mainGroup = D2D4E0159FE6D2BE01F3AD6F;
+			productRefGroup = 52C2E9F9C381A31A704BE86D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6E95ACC603942F7820612763 /* Pods */,
-				875B074F53DD444E9A7E9E9F /* Pods-KZAsserts */,
+				09D64CD92A72F97B8ED9E6FC /* Pods */,
+				F27ACFEBD09A936A41A093E0 /* Pods-KZAsserts */,
+				5049150096E1773546E07392 /* Pods-TWCommonLib */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8BD0D362760475B351026C2B /* Sources */ = {
+		167D8DBFCD9C86EF36C023EA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D804B787DE376506D97A0E25 /* KZAsserts.m in Sources */,
-				EDB873909AE549221C4DD160 /* Pods-KZAsserts-dummy.m in Sources */,
+				B770DEF612548B0521B20345 /* Pods-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E35544CC78207E0917EE097A /* Sources */ = {
+		7E013DC05CF552B28E5EF56F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04E18BA428C55EC8A8041F9D /* Pods-dummy.m in Sources */,
+				468AE4BB8B64A40AE7050718 /* NSLayoutConstraint+ConstraintCopying.m in Sources */,
+				EC05BF52950ACE6C8B45AC7D /* NSLayoutConstraint+TWAnimations.m in Sources */,
+				0881989AACA6BB9708EF5411 /* NSObject+TWObjectLifetime.m in Sources */,
+				1922DC307FFA05FBD4BA5145 /* NSSet+TWSetByRemoving.m in Sources */,
+				8DE8392BBBC1E80A28467D7B /* Pods-TWCommonLib-dummy.m in Sources */,
+				26A23A4E7CDE2245612968F8 /* TWAlertFactory.m in Sources */,
+				EF55C7894EDDB4893B531494 /* TWArrayTableViewDataSource.m in Sources */,
+				6F5149C4E3D23B130C4C7F12 /* TWCommonFunctions.m in Sources */,
+				5CB3335B2BDF27D751FA5EC1 /* TWCoordinateSystemConverter.m in Sources */,
+				A0944E894F727D8D44EEE0F2 /* TWDataWriteHelper.m in Sources */,
+				E4BCA835EAE8D8926F14B785 /* TWDispatchMacros.m in Sources */,
+				6ACC9F3E1BD7F4F7253A20F7 /* TWItemsToSeguesMapping.m in Sources */,
+				D91F7EFF041063A9493FF6BB /* TWJSONHelper.m in Sources */,
+				F44118C222FB0AC156298804 /* TWLocationUpdatesManager.m in Sources */,
+				794A04894D73ECE60577E5CB /* TWMapKitHelper.m in Sources */,
+				8551307034795262B91C218A /* TWOrientationChangeDetector.m in Sources */,
+				0ACAA369F069C6B1F50F9E67 /* TWOrientationChangeDetectorUsingAccelerometer.m in Sources */,
+				BEF60A765788AAACABC096D5 /* TWRectangleMath.m in Sources */,
+				36DCDB722DA53B18DC8CBEE7 /* TWScrollViewDelegate.m in Sources */,
+				F464163F24FD466CAFB81A81 /* TWSimpleMapViewDelegate.m in Sources */,
+				E2844CEF66B95F729C55581E /* TWSimpleTableViewCell.m in Sources */,
+				F594756FC79A4C3B11603AF7 /* TWSimpleTableViewDataSource.m in Sources */,
+				B85C62637560AAFB56B25B6F /* TWSimpleTableViewDelegate.m in Sources */,
+				521C45077B79B667B5863E88 /* TWTextViewWithMaxLengthDelegate.m in Sources */,
+				6A1863A99451B924477D377C /* TWUIImagePickerHelper.m in Sources */,
+				170AE3E6E902A48BA1916B2E /* UIImage+TWByOverlayingImage.m in Sources */,
+				D7A347161975AE67F065CC57 /* UIImage+TWConvenience.m in Sources */,
+				78E4FD8283896E581BA8E4A4 /* UIImage+TWCreateImage.m in Sources */,
+				E3EDFFDB0815932EF284A181 /* UIImagePickerController+TWCameraDeviceSwitching.m in Sources */,
+				5A6334802B5CB994AB5C6353 /* UIView+LayerDecoration.m in Sources */,
+				550DF414158D07DD1B4A86FA /* UIView+TWFadeAnimations.m in Sources */,
+				CF740B4A6BB4A012ABD4EA49 /* UIView+TWSizes.m in Sources */,
+				60438B91AB4AB993D2FB86AE /* UIViewController+PerformSegueMapping.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D92419B89699AAD62214C681 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA5D6FCB014699AE7BCB0CAF /* KZAsserts.m in Sources */,
+				7AB8D5120C7A11E48ABD0E19 /* Pods-KZAsserts-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		FC8596CF4CBA7F6123A0CAEA /* PBXTargetDependency */ = {
+		6F31BFE4FC8642ED0CF4839E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-KZAsserts";
-			target = 875B074F53DD444E9A7E9E9F /* Pods-KZAsserts */;
-			targetProxy = 66885D7CAC9C6D9267921E59 /* PBXContainerItemProxy */;
+			target = F27ACFEBD09A936A41A093E0 /* Pods-KZAsserts */;
+			targetProxy = 26F901A1371322323D726864 /* PBXContainerItemProxy */;
+		};
+		DE61B3DF97374848CA952386 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-TWCommonLib";
+			target = 5049150096E1773546E07392 /* Pods-TWCommonLib */;
+			targetProxy = E76847C1FF17BD980A8B025B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0926BC83E7F25F29C461F97E /* Release */ = {
+		01A316DBF3B8DA3B2177155D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C7F0D7BB8C5C58D53F07F66 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 5460C5DF22BF0B970BC58B9C /* Pods-KZAsserts-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-KZAsserts/Pods-KZAsserts-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		14A4F5B49F48F2C1093453AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B5B9D62853F0E75547B2F06 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
@@ -286,7 +690,118 @@
 			};
 			name = Release;
 		};
-		37B0FCB8A01F800404B29EBC /* Release */ = {
+		1D1EF407F7F757558F6D2EF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDEDAB80D8403EAB090D6D92 /* Pods-TWCommonLib-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-TWCommonLib/Pods-TWCommonLib-prefix.pch";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		33601E4226F25D5E2C75A9BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AA2636BA8A2AC25ADD1C439 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		7627990DB4656B28C3B10504 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5460C5DF22BF0B970BC58B9C /* Pods-KZAsserts-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-KZAsserts/Pods-KZAsserts-prefix.pch";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		811146E6457B1F9EA52272ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDEDAB80D8403EAB090D6D92 /* Pods-TWCommonLib-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-TWCommonLib/Pods-TWCommonLib-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8A87E3D6C0AF6B43261B34B1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -317,89 +832,7 @@
 			};
 			name = Release;
 		};
-		3BFB2F08BE527C4F442B1A61 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6268BABF9FD89D96FEB52DD2 /* Pods-KZAsserts-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-KZAsserts/Pods-KZAsserts-prefix.pch";
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				OTHER_CFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		4DEE28838FD387DC1DD01C41 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6268BABF9FD89D96FEB52DD2 /* Pods-KZAsserts-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-KZAsserts/Pods-KZAsserts-prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		D2BCBB7DA2A8A89E787E92A1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DC2BCF23E966F6DACDD6D397 /* Pods.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		FE150D2DAD3D2AD087721F25 /* Debug */ = {
+		D8775F3A7090203A64111920 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -438,34 +871,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5CE47CC2AA9EF862004BFA54 /* Build configuration list for PBXNativeTarget "Pods-KZAsserts" */ = {
+		0A0E95D0D9A28CCAF1D4C028 /* Build configuration list for PBXNativeTarget "Pods-TWCommonLib" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4DEE28838FD387DC1DD01C41 /* Debug */,
-				3BFB2F08BE527C4F442B1A61 /* Release */,
+				811146E6457B1F9EA52272ED /* Debug */,
+				1D1EF407F7F757558F6D2EF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A901FEE939600EBBFC5F1B87 /* Build configuration list for PBXProject "Pods" */ = {
+		35A004A450D3EDD0CE88D6A1 /* Build configuration list for PBXNativeTarget "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FE150D2DAD3D2AD087721F25 /* Debug */,
-				37B0FCB8A01F800404B29EBC /* Release */,
+				33601E4226F25D5E2C75A9BD /* Debug */,
+				14A4F5B49F48F2C1093453AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E13F792381DBAF40903DA6C6 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+		3A515B4E85AD403471BC43F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D2BCBB7DA2A8A89E787E92A1 /* Debug */,
-				0926BC83E7F25F29C461F97E /* Release */,
+				D8775F3A7090203A64111920 /* Debug */,
+				8A87E3D6C0AF6B43261B34B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C2FEBC258BE0671666E5A00 /* Build configuration list for PBXNativeTarget "Pods-KZAsserts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01A316DBF3B8DA3B2177155D /* Debug */,
+				7627990DB4656B28C3B10504 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 3CEB9BFD4DD83E61A1986569 /* Project object */;
+	rootObject = 9397B0479EFC96B14ADC9CD7 /* Project object */;
 }
