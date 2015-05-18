@@ -10,7 +10,8 @@
 		3138743D1B08BE710088CDA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3138743B1B08BE710088CDA7 /* Main.storyboard */; };
 		3138745C1B08C0A20088CDA7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3138745B1B08C0A20088CDA7 /* AppDelegate.m */; };
 		313874621B08C0C40088CDA7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 313874611B08C0C40088CDA7 /* main.m */; };
-		313874681B0941610088CDA7 /* TWGallery.m in Sources */ = {isa = PBXBuildFile; fileRef = 313874671B0941610088CDA7 /* TWGallery.m */; };
+		313874681B0941610088CDA7 /* TWGalleryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 313874671B0941610088CDA7 /* TWGalleryView.m */; };
+		313874761B09AE960088CDA7 /* TWGalleryPageControlLayoutHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 313874751B09AE960088CDA7 /* TWGalleryPageControlLayoutHelper.m */; };
 		A1AF1A31FB6ABA190F01E02D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92718D7D5F06887BD096D41E /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -22,8 +23,10 @@
 		3138745B1B08C0A20088CDA7 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Exclude/AppDelegate.m; sourceTree = "<group>"; };
 		313874601B08C0B60088CDA7 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = Exclude/PrefixHeader.pch; sourceTree = "<group>"; };
 		313874611B08C0C40088CDA7 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Exclude/main.m; sourceTree = "<group>"; };
-		313874661B0941610088CDA7 /* TWGallery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWGallery.h; sourceTree = "<group>"; };
-		313874671B0941610088CDA7 /* TWGallery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWGallery.m; sourceTree = "<group>"; };
+		313874661B0941610088CDA7 /* TWGalleryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWGalleryView.h; sourceTree = "<group>"; };
+		313874671B0941610088CDA7 /* TWGalleryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWGalleryView.m; sourceTree = "<group>"; };
+		313874741B09AE960088CDA7 /* TWGalleryPageControlLayoutHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWGalleryPageControlLayoutHelper.h; sourceTree = "<group>"; };
+		313874751B09AE960088CDA7 /* TWGalleryPageControlLayoutHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWGalleryPageControlLayoutHelper.m; sourceTree = "<group>"; };
 		44CB11D96D28C64437D783CC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		92718D7D5F06887BD096D41E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFA71D0ED032DB6704D94090 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -97,8 +100,9 @@
 		313874631B09405E0088CDA7 /* Gallery */ = {
 			isa = PBXGroup;
 			children = (
-				313874661B0941610088CDA7 /* TWGallery.h */,
-				313874671B0941610088CDA7 /* TWGallery.m */,
+				313874731B09AE6D0088CDA7 /* Implementation */,
+				313874661B0941610088CDA7 /* TWGalleryView.h */,
+				313874671B0941610088CDA7 /* TWGalleryView.m */,
 			);
 			name = Gallery;
 			sourceTree = "<group>";
@@ -120,6 +124,15 @@
 				313874311B08BE710088CDA7 /* Supporting Files */,
 			);
 			name = Project;
+			sourceTree = "<group>";
+		};
+		313874731B09AE6D0088CDA7 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				313874741B09AE960088CDA7 /* TWGalleryPageControlLayoutHelper.h */,
+				313874751B09AE960088CDA7 /* TWGalleryPageControlLayoutHelper.m */,
+			);
+			name = Implementation;
 			sourceTree = "<group>";
 		};
 		551322C06DCD3AD1A8AC5CDD /* Pods */ = {
@@ -242,7 +255,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				313874681B0941610088CDA7 /* TWGallery.m in Sources */,
+				313874761B09AE960088CDA7 /* TWGalleryPageControlLayoutHelper.m in Sources */,
+				313874681B0941610088CDA7 /* TWGalleryView.m in Sources */,
 				3138745C1B08C0A20088CDA7 /* AppDelegate.m in Sources */,
 				313874621B08C0C40088CDA7 /* main.m in Sources */,
 			);
