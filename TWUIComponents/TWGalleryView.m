@@ -22,6 +22,8 @@ const CGFloat kPageControlBottomOffset = 5.0f;
 
 @implementation TWGalleryView
 
+#pragma mark - View initialization
+
 - (instancetype)initWithFrame:(CGRect)frame
 {
   self = [super initWithFrame:frame];
@@ -83,7 +85,7 @@ const CGFloat kPageControlBottomOffset = 5.0f;
   [self setupPageControl];
 }
 
-#pragma mark -
+#pragma mark - ImageView subviews handling
 
 - (void)setImages:(NSArray *)images
 {
@@ -92,7 +94,7 @@ const CGFloat kPageControlBottomOffset = 5.0f;
     _images = images;
     
     NSInteger numberOfElements = images.count;
-    [self setupScrollViewContentSizeForNumberOfElements:numberOfElements];
+    [self updateScrollViewContentSizeForNumberOfElements:numberOfElements];
     self.pageControl.numberOfPages = numberOfElements;
     [self addImagesToScrollView:images];
   }
@@ -105,27 +107,6 @@ const CGFloat kPageControlBottomOffset = 5.0f;
       [subview removeFromSuperview];
     }
   }];
-}
-
-// TODO: simplify this
-- (void)layoutSubviews
-{
-  [super layoutSubviews];
-  
-  // update scrollView contentSize
-  [self setupScrollViewContentSizeForNumberOfElements:self.images.count];
-  
-  if ([self scrollViewHasAnyImageViewSubviews]) {
-    [self updateContentImageViewFrames];
-  }
-  else {
-    [self addImagesToScrollView:self.images];
-  }
-}
-
-- (BOOL)scrollViewHasAnyImageViewSubviews
-{
-  return (self.contentImageViews.count > 0);
 }
 
 - (void)addImagesToScrollView:(NSArray *)images
@@ -144,19 +125,20 @@ const CGFloat kPageControlBottomOffset = 5.0f;
   [self bringSubviewToFront:self.pageControl];
 }
 
-- (UIViewContentMode)imageViewContentModeForGalleryImage:(UIImage *)image
-{
-  if ([self imageFitsInGalleryScrollView:image]) {
-    return UIViewContentModeCenter;
-  }
-  return UIViewContentModeScaleAspectFit;
-}
+#pragma mark - View layout
 
-- (BOOL)imageFitsInGalleryScrollView:(UIImage *)image
+- (void)layoutSubviews
 {
-  BOOL widthFits = (image.size.width <= self.bounds.size.width);
-  BOOL heightFits = (image.size.height <= self.bounds.size.height);
-  return (widthFits && heightFits);
+  [super layoutSubviews];
+  
+  [self updateScrollViewContentSizeForNumberOfElements:self.images.count];
+  
+  if ([self scrollViewHasAnyImageViewSubviews]) {
+    [self updateContentImageViewFrames];
+  }
+  else {
+    [self addImagesToScrollView:self.images];
+  }
 }
 
 - (void)updateContentImageViewFrames
@@ -168,11 +150,33 @@ const CGFloat kPageControlBottomOffset = 5.0f;
   }];
 }
 
-- (void)setupScrollViewContentSizeForNumberOfElements:(NSInteger)numberOfElements
+- (void)updateScrollViewContentSizeForNumberOfElements:(NSInteger)numberOfElements
 {
   CGSize contentSize = self.bounds.size;
   contentSize.width *= numberOfElements;
   self.contentSize = contentSize;
+}
+
+#pragma mark - Auxiliary methods
+
+- (BOOL)imageFitsInGalleryScrollView:(UIImage *)image
+{
+  BOOL widthFits = (image.size.width <= self.bounds.size.width);
+  BOOL heightFits = (image.size.height <= self.bounds.size.height);
+  return (widthFits && heightFits);
+}
+
+- (UIViewContentMode)imageViewContentModeForGalleryImage:(UIImage *)image
+{
+  if ([self imageFitsInGalleryScrollView:image]) {
+    return UIViewContentModeCenter;
+  }
+  return UIViewContentModeScaleAspectFit;
+}
+
+- (BOOL)scrollViewHasAnyImageViewSubviews
+{
+  return (self.contentImageViews.count > 0);
 }
 
 - (NSInteger)currentIndex
